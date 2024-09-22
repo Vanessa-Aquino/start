@@ -1,5 +1,6 @@
 html{
     font-family: Hoboto;
+    background-color: black;
 }
 
 body {
@@ -62,8 +63,8 @@ header{
     background-color: rgb(109, 25, 177);
     margin-top: 4px;
     position: absolute;
-
 }
+
 .botoes-header:hover:after{
     width: 100%;
     transition: 0.5s;
@@ -238,17 +239,16 @@ button:hover{
 .segunda-parte{
     background-color: #ced4da;
     width: 100%;
-    height: 100vw;
+    height: 75vw;
 }
 
-@media (max-width:600px) {
+@media (max-width:1000px) {
     .segunda-parte{
-        height: 400vw;
+        height: 90vw;
     }
 }
 
 .segundo-titulo{
-    /* border: 1px solid red; */
     padding-top: 140px;
     font-family:Handjet;
     font-size: 3rem;
@@ -270,7 +270,7 @@ h2 span {
     cursor: pointer;
 }
 
-.tres-imagens{
+.tres-imagens {
     /* border: 1px solid red; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -280,6 +280,7 @@ h2 span {
     color: black;
     margin-left: 20px;
     margin-right: 20px;
+    margin-bottom: 100px;
 }
 
 @media (min-width:800px) {
@@ -366,9 +367,8 @@ span span{
 
 .terceira-parte{
     width: 100%;
-    height: 100vw;
+    height: auto;
     color: white;
-    
 }
 
 .container-grid{
@@ -378,11 +378,49 @@ span span{
     gap: 20px;
     color: white;
     margin-left: 20px;
+    height: 45vw;
+    border: 5px solid pink
+}
+
+@media (max-width:1200px) {
+    .container-grid{
+        height: 65vw;
+    }
+}
+
+@media (min-width:600px) {
+    .container-grid{
+        height: 200vw;
+    }
+}
+
+@media (max-width:1100px) {
+    .container-grid{
+        height: 100vw;
+    }
+}
+
+.texto-controles{
+    border: 5px solid red;
+    height: 600px;
+}
+
+@media (max-width:1200px) {
+    .texto-controles{
+        height: 700px;
+    }
 }
 
 .menor{
     font-size: 1rem;
     letter-spacing: 2px;
+    color: #ffffff8f;
+}
+
+@media (max-width:1200px) {
+    .menor{
+        margin-top: 20px;
+    }
 }
 
 .titulo-controles{
@@ -400,21 +438,43 @@ span span{
     transition: 0.5s;
     cursor: pointer;
 }
+
 .segundo-texto{
     font-size: 1.5rem;
     letter-spacing: 2px;
     margin-bottom: 30px;
     text-align: start;
+    border: 5px solid blue;
+}
+
+@media (max-width:1200px) {
+    .segundo-texto{
+        height: 400px;
+ 
+    }
 }
 
 .controles{
-    max-height: 100%;
+    max-height: 90%;
+    display: flex;
+    justify-content: center;
 }
 
-#imagem-controle{
-    max-width: 100%;
-    max-height: 1500px;
 
+#imagem-controle{
+    max-width: 90%;
+    max-height: 100%;
+    margin-top: -50px;
+    margin-bottom: -25px;
+    border-radius: 5px;
+}
+
+@media (max-width:1200px) {
+    #imagem-controle{
+        max-width: 100%;
+        max-height: 1100px;
+        margin-bottom: -25%;
+    }
 }
 
 @media (max-width:880px) {
@@ -431,4 +491,15 @@ span span{
     .segundo-texto {
         height: 400px ;
     }
+}
+
+.conheca{
+    font-size: large;
+    color: rgb(109, 25, 177);
+}
+
+/* DEPOIMENTOS */
+.depoimentos{
+    background-color: white;
+    height: 100vw;
 }
